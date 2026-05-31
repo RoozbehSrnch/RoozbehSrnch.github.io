@@ -3,17 +3,24 @@
 
 const talks = [
     {
-        title: "Analyzing Selfish Proposing in Proof‑of‑Stake Protocols",
-        event: "COSIC Seminar Series",
+        title: "Security Foundations of Permissionless Blockchains",
+        event: "COSIC Seminar",
         location: "Leuven, Belgium",
-        date: "2025-02-10",
-        link: "https://example.com/placeholder-talk1"
+        date: "2025-01-15",
+        link: "https://www.youtube.com/watch?v=W4RYLeHqKUg"
     },
     {
-        title: "Incentive Analysis of Permissionless Blockchains",
-        event: "Blockchain Security Workshop",
-        location: "Brussels, Belgium",
-        date: "2024-11-05",
-        link: "https://example.com/placeholder-talk2"
+        title: "Time‑Averaged Analysis of Selfish Mining in Bitcoin",
+        event: "Cryptofinance Seminar (Bitcoin.fr)",
+        location: "Online seminar",
+        date: "2024-11-10",
+        link: "https://www.youtube.com/watch?v=y_cRjwccBUY"
+    },
+    {
+        title: "Commitment Attacks on Ethereum’s Reward Mechanism",
+        event: "COSIC Seminar",
+        location: "Leuven, Belgium",
+        date: "2024-12-05",
+        link: "https://www.youtube.com/watch?v=IAXdA-xWiN4"
     }
 ];

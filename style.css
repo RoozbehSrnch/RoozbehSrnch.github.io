@@ -23,11 +23,12 @@ a:hover {
 
 /* Navigation */
 .navbar {
+    /* Use the same subtle colour as the footer for both upper and lower bars */
     width: 100%;
     position: relative;
     z-index: 10;
-    background: #ffffff;
-    border-bottom: 1px solid #e5e7eb;
+    background: #f5f7fa;
+    border-bottom: 1px solid #dfe6f3;
     color: #333;
 }
 
@@ -74,8 +75,9 @@ a:hover {
 }
 
 .profile-photo {
-    width: 140px;
-    height: 140px;
+    /* Increase the profile photo size to roughly twice the original */
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 1.5rem;
@@ -200,8 +202,10 @@ a:hover {
 
 /* Footer */
 .footer {
-    background-color: #1f4e79;
-    color: #fff;
+    /* Match the navigation bar colour for consistency */
+    background-color: #f5f7fa;
+    color: #1f4e79;
     padding: 1rem;
     text-align: center;
+    border-top: 1px solid #dfe6f3;
 }

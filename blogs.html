@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talks – Roozbeh Sarenche</title>
+    <title>Blogs – Roozbeh Sarenche</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-Vz6y5kT8pFp3PcW2YgCQP7uOzJ9x+nIHuPu1fGZNeGg6o2TfZ4AkCHuMoRU8qmxQw+k1T2LnIE5sPQXIHvmiHQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -22,11 +22,11 @@
         </nav>
     </header>
     <main>
-        <section class="section alt-bg">
+        <section class="section">
             <div class="container">
-                <h2>Talks</h2>
-                <!-- Talks entries are loaded dynamically from assets/talks.js -->
-                <ul id="talks-list" class="research-list"></ul>
+                <h2>Blogs</h2>
+                <!-- Blog entries are loaded from assets/blog.js -->
+                <div id="blog-list"></div>
             </div>
         </section>
     </main>
@@ -35,23 +35,24 @@
             <p>&copy; 2026 Roozbeh Sarenche. All rights reserved.</p>
         </div>
     </footer>
-    <!-- Load talks data -->
-    <script src="assets/talks.js"></script>
+    <!-- Load blog data -->
+    <script src="assets/blog.js"></script>
     <script>
-    // Render talks defined in talks.js
+    // Render blog posts defined in blog.js
     (function() {
-        const list = document.getElementById('talks-list');
-        if (typeof talks === 'undefined' || !Array.isArray(talks)) {
-            list.innerHTML = '<li>Unable to load talks.</li>';
+        const container = document.getElementById('blog-list');
+        if (typeof blogPosts === 'undefined' || !Array.isArray(blogPosts)) {
+            container.innerHTML = '<p>Unable to load blog posts.</p>';
             return;
         }
-        talks.sort((a, b) => new Date(b.date) - new Date(a.date));
-        talks.forEach(talk => {
-            const li = document.createElement('li');
-            const date = new Date(talk.date).toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' });
-            const linkHtml = talk.link ? ' <a href="' + talk.link + '" target="_blank">[link]</a>' : '';
-            li.innerHTML = '<strong>' + talk.title + '</strong><br>' + talk.event + ', ' + talk.location + ' (' + date + ')' + linkHtml;
-            list.appendChild(li);
+        blogPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+        blogPosts.forEach(post => {
+            const div = document.createElement('div');
+            div.style.marginBottom = '1.5rem';
+            const dateStr = new Date(post.date).toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
+            const linkHtml = post.link && post.link !== '#' ? '<a href="' + post.link + '" target="_blank">Read more</a>' : '';
+            div.innerHTML = '<h3>' + post.title + '</h3><p><em>' + dateStr + '</em></p><p>' + post.summary + '</p>' + linkHtml;
+            container.appendChild(div);
         });
     })();
     </script>

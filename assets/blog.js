@@ -5,7 +5,7 @@ const blogPosts = [
     {
         title: "First blog post (coming soon)",
         date: "2026-01-01",
-        summary: "Your blog posts will appear here. Edit blog.js to add entries.",
+        summary: "Stay tuned for future updates on blockchain security, cryptography and decentralised systems.",
         link: "#"
     }
 ];
