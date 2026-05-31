@@ -1,0 +1,36 @@
+// This file contains an array of publication objects used by publications.html.
+// To add or update entries, edit this array. Each object should contain:
+// title, conference, year, and link (optional).
+
+const publications = [
+    {
+        title: "Bitcoin under Volatile Block Rewards: How Mempool Statistics Can Influence Bitcoin Mining",
+        conference: "ACM Conference on Computer and Communications Security (CCS)",
+        year: 2025,
+        link: "https://arxiv.org/abs/2411.11702"
+    },
+    {
+        title: "Commitment Attacks on Ethereum’s Reward Mechanism",
+        conference: "IEEE European Symposium on Security and Privacy (EuroS&P)",
+        year: 2025,
+        link: "https://arxiv.org/abs/2407.19479"
+    },
+    {
+        title: "Mining Power Destruction Attacks in the Presence of Petty‑Compliant Mining Pools",
+        conference: "Financial Cryptography and Data Security",
+        year: 2025,
+        link: "https://arxiv.org/abs/2502.07410"
+    },
+    {
+        title: "Deep Selfish Proposing in Longest‑Chain Proof‑of‑Stake Protocols",
+        conference: "Financial Cryptography and Data Security",
+        year: 2024,
+        link: "https://eprint.iacr.org/2024/622"
+    },
+    {
+        title: "Time‑Averaged Analysis of Selfish Mining in Bitcoin: Is Orphan Reporting an Effective Countermeasure?",
+        conference: "IEEE Transactions on Information Forensics and Security (TIFS)",
+        year: 2024,
+        link: "https://eprint.iacr.org/2024/363"
+    }
+];

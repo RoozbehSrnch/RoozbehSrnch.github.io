@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications – Roozbeh Sarenche</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-Vz6y5kT8pFp3PcW2YgCQP7uOzJ9x+nIHuPu1fGZNeGg6o2TfZ4AkCHuMoRU8qmxQw+k1T2LnIE5sPQXIHvmiHQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">Roozbeh&nbsp;Sarenche</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="talks.html">Talks</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2>Publications</h2>
+                <p>This page automatically displays your publications from a simple JavaScript data file. To add or update entries, edit <code>assets/publications.js</code> in the repository. New publications will appear here after you commit the changes.</p>
+                <ol id="publications-list" class="pub-list"></ol>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Roozbeh Sarenche. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Load publications data -->
+    <script src="assets/publications.js"></script>
+    <script>
+    // Render publications defined in publications.js
+    (function() {
+        const list = document.getElementById('publications-list');
+        if (typeof publications === 'undefined' || !Array.isArray(publications)) {
+            list.innerHTML = '<li>Unable to load publications.</li>';
+            return;
+        }
+        // sort by year descending
+        publications.sort((a, b) => b.year - a.year);
+        publications.forEach(pub => {
+            const li = document.createElement('li');
+            const linkHtml = pub.link ? ' <a href="' + pub.link + '" target="_blank">ePrint</a>' : '';
+            li.innerHTML = '<strong>' + pub.title + '</strong><br>' + pub.conference + ' ' + pub.year + '.' + linkHtml;
+            list.appendChild(li);
+        });
+    })();
+    </script>
+</body>
+</html>

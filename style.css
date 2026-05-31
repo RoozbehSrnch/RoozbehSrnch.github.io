@@ -9,7 +9,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f7f7f7;
+    background-color: #f9f9f9;
 }
 
 a {
@@ -24,27 +24,26 @@ a:hover {
 /* Navigation */
 .navbar {
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     z-index: 10;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    color: #333;
 }
 
 .nav-container {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0.75rem 1rem;
 }
 
 .logo {
     font-size: 1.4rem;
     font-weight: bold;
-    color: #fff;
+    color: #1f4e79;
 }
 
 .nav-links {
@@ -54,43 +53,55 @@ a:hover {
 }
 
 .nav-links li a {
-    color: #fff;
-    font-weight: bold;
+    color: #1f4e79;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-    color: #a8cfff;
+    color: #41729F;
 }
 
-/* Hero */
-.hero {
-    height: 60vh;
-    /* Use a subtle gradient rather than an image for a professional look */
-    background: linear-gradient(135deg, #002b54 0%, #004d8b 100%);
-    position: relative;
-    color: #fff;
+/* Header profile section */
+.profile-header {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: flex-start;
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-/* Removed image overlay for hero section; gradient provides sufficient contrast */
-
-.hero-content {
-    position: relative;
-    z-index: 2;
+.profile-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1.5rem;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
-.hero h1 {
-    font-size: 2.5rem;
+.header-info h1 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+    color: #1f4e79;
+}
+
+.header-info p {
+    font-size: 1rem;
+    color: #555;
     margin-bottom: 0.5rem;
 }
 
-.hero p {
-    font-size: 1.25rem;
-    font-weight: 300;
+.header-info .tagline {
+    font-weight: 500;
+    color: #41729F;
+    margin-bottom: 0.8rem;
+}
+
+.header-info .btn {
+    margin-top: 0.5rem;
 }
 
 /* Sections */
@@ -98,9 +109,8 @@ a:hover {
     padding: 3rem 1rem;
 }
 
-.dark {
-    background-color: #003366;
-    color: #f5f5f5;
+.alt-bg {
+    background-color: #f0f4f8;
 }
 
 .container {
@@ -109,27 +119,29 @@ a:hover {
 }
 
 .section h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
     text-align: center;
+    color: #1f4e79;
 }
 
 .section p {
     margin-bottom: 1rem;
+    color: #444;
 }
 
 .btn {
     display: inline-block;
-    background-color: #005aaa;
+    background-color: #41729F;
     color: #fff;
-    padding: 0.6rem 1.2rem;
+    padding: 0.5rem 1.0rem;
     border-radius: 4px;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     transition: background 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #003d80;
+    background-color: #1f4e79;
     text-decoration: none;
 }
 
@@ -137,6 +149,7 @@ a:hover {
 .research-list {
     list-style: disc inside;
     margin-left: 1rem;
+    color: #444;
 }
 
 .pub-list {
@@ -151,7 +164,7 @@ a:hover {
 
 /* Timeline */
 .timeline {
-    border-left: 3px solid #005aaa;
+    border-left: 3px solid #41729F;
     padding-left: 1.5rem;
     margin-bottom: 2rem;
 }
@@ -161,31 +174,33 @@ a:hover {
 }
 
 .timeline-item h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.25rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+    color: #1f4e79;
 }
 
 .timeline-date {
     font-size: 0.9rem;
-    color: #555;
-    margin-bottom: 0.5rem;
+    color: #777;
+    margin-bottom: 0.4rem;
 }
 
 /* Contact */
 .contact-list {
     list-style: none;
     margin-top: 1rem;
-    line-height: 2;
+    line-height: 1.8;
+    color: #444;
 }
 
 .contact-list li i {
     margin-right: 0.5rem;
-    color: #005aaa;
+    color: #41729F;
 }
 
 /* Footer */
 .footer {
-    background-color: #002d5a;
+    background-color: #1f4e79;
     color: #fff;
     padding: 1rem;
     text-align: center;

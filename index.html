@@ -9,151 +9,87 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-Vz6y5kT8pFp3PcW2YgCQP7uOzJ9x+nIHuPu1fGZNeGg6o2TfZ4AkCHuMoRU8qmxQw+k1T2LnIE5sPQXIHvmiHQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- Header / Hero section -->
-    <header class="hero">
+    <header>
         <nav class="navbar">
             <div class="nav-container">
-                <a href="#" class="logo">Roozbeh&nbsp;Sarenche</a>
+                <a href="index.html" class="logo">Roozbeh&nbsp;Sarenche</a>
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#research">Research</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="talks.html">Talks</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
             </div>
         </nav>
-        <div class="hero-content">
-            <h1>Blockchain Security Researcher</h1>
-            <p>Postdoctoral Fellow, COSIC, KU&nbsp;Leuven</p>
+        <div class="profile-header">
+            <img src="assets/profile.jpg" alt="Profile photo" class="profile-photo">
+            <div class="header-info">
+                <h1>Roozbeh Sarenche</h1>
+                <p>Postdoctoral Researcher, COSIC, KU&nbsp;Leuven</p>
+                <p class="tagline">Analyzing the security &amp; incentives of permissionless blockchains</p>
+                <a href="assets/cv.pdf" class="btn" target="_blank"><i class="fa fa-file-pdf"></i> Download CV</a>
+            </div>
         </div>
     </header>
-
     <main>
-        <!-- About section -->
         <section id="about" class="section">
             <div class="container">
                 <h2>About Me</h2>
                 <p>
-                    I am a postdoctoral researcher in blockchain security and cryptography at the
+                    I am a postdoctoral researcher at the
                     <a href="https://www.esat.kuleuven.be/cosic/" target="_blank">COSIC</a>
-                    research group of KU&nbsp;Leuven. I received my Ph.D. in Blockchain Security from
-                    KU&nbsp;Leuven in September&nbsp;2025 and hold an M.Sc. in Secure Communications and
-                    Cryptography from Sharif University of Technology and a B.Sc. in Electrical
-                    Engineering from the University of Tehran. My research focuses on the security
-                    analysis of permissionless blockchains and the incentive structures that ensure
-                    their stability.
+                    research group of KU&nbsp;Leuven working on the security and incentive design of permissionless blockchains.
+                    I obtained my Ph.D. in Blockchain Security from KU&nbsp;Leuven under the supervision of
+                    <a href="https://homes.esat.kuleuven.be/~preneel/" target="_blank">Bart&nbsp;Preneel</a>.
+                    My thesis, <em>Incentive Analysis in Permissionless Blockchains</em>, examines how reward mechanisms and game‑theoretic behaviour shape the robustness of blockchain systems.
                 </p>
                 <p>
-                    I investigate consensus mechanisms for both Proof‑of‑Work and Proof‑of‑Stake
-                    systems and study attack vectors such as selfish mining and selfish proposing. By
-                    applying cryptographic tools, I work towards scalable, fair and widely deployable
-                    decentralized systems.
+                    My research explores consensus mechanisms in both Proof‑of‑Work and Proof‑of‑Stake networks and studies attacks such as selfish mining, selfish proposing and commitment attacks. By combining cryptographic techniques with economic models, I aim to build secure, fair and scalable decentralised systems.
                 </p>
-                <a href="assets/cv.pdf" class="btn" target="_blank"><i class="fa fa-file-pdf"></i> Download CV</a>
             </div>
         </section>
-
-        <!-- Research section -->
-        <section id="research" class="section dark">
+        <section id="research" class="section alt-bg">
             <div class="container">
                 <h2>Research Interests</h2>
                 <ul class="research-list">
-                    <li>Security analysis of blockchain consensus mechanisms and incentive structures</li>
-                    <li>Time‑averaged analysis of selfish mining attacks in Bitcoin</li>
-                    <li>Selfish proposing and rational mining behaviour in Proof‑of‑Stake protocols</li>
-                    <li>Secure and fair reward distribution in permissionless blockchains</li>
-                    <li>Cryptographic protocols for scalability and privacy</li>
+                    <li>Incentive analysis of permissionless blockchains</li>
+                    <li>Security and game‑theoretic analysis of blockchains &amp; financial systems</li>
+                    <li>Cryptography and cryptographic protocols</li>
                 </ul>
             </div>
         </section>
-
-        <!-- Experience section -->
-        <section id="experience" class="section">
-            <div class="container">
-                <h2>Professional Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h3>Postdoctoral Researcher – KU&nbsp;Leuven, COSIC</h3>
-                        <span class="timeline-date">Sep&nbsp;2025&nbsp;– Present</span>
-                        <p>
-                            Conducting advanced research on consensus mechanisms, incentive design and
-                            cryptographic protocols for permissionless blockchains.
-                        </p>
-                    </div>
-                    <div class="timeline-item">
-                        <h3>Remote Research Intern (Cryptography) – Nethermind</h3>
-                        <span class="timeline-date">May&nbsp;2024&nbsp;– Jul&nbsp;2024</span>
-                        <p>
-                            Collaborated with the zero‑knowledge research team on designing a ZK proving
-                            system for verifiable machine‑learning inference. Implemented and optimized
-                            advanced folding schemes including Nova and HyperNova.
-                        </p>
-                    </div>
-                </div>
-
-                <h2>Education</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h3>Ph.D. in Blockchain Security – KU&nbsp;Leuven</h3>
-                        <span class="timeline-date">Jul&nbsp;2020&nbsp;– Sep&nbsp;2025</span>
-                        <p>Thesis: <em>Incentive Analysis in Permissionless Blockchains</em>. Advisors: Prof. Bart
-                        Preneel &amp; Prof. Svetla Nikova.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <h3>M.Sc. in Secure Communications and Cryptography – Sharif University of Technology</h3>
-                        <span class="timeline-date">Sep&nbsp;2016&nbsp;– Dec&nbsp;2018</span>
-                        <p>Thesis: <em>Holding Secure Auctions in Smart Grids</em>.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <h3>B.Sc. in Electrical Engineering – University of Tehran</h3>
-                        <span class="timeline-date">Sep&nbsp;2012&nbsp;– Sep&nbsp;2016</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Publications section -->
-        <section id="publications" class="section dark">
+        <section id="selected-publications" class="section">
             <div class="container">
                 <h2>Selected Publications</h2>
-                <p>Below is a selection of my recent and impactful publications. For a full list, see my
-                    <a href="https://www.esat.kuleuven.be/cosic/static_people/roozbeh-sarenche.html#publications" target="_blank">COSIC page</a>.
-                </p>
+                <p>The following publications illustrate key themes of my research. Each entry links to the corresponding ePrint or arXiv version for open access.</p>
                 <ol class="pub-list">
                     <li>
-                        <strong>Selfish Mining Time‑Averaged Analysis in Bitcoin: Is Orphan Reporting an Effective Countermeasure?</strong><br>
-                        IEEE Transactions on Information Forensics and Security (TIFS), vol.&nbsp;20, pp.&nbsp;449–464, 2024.
-                    </li>
-                    <li>
-                        <strong>DASLog: Decentralized Auditable Secure Logging for UAV Ecosystems</strong><br>
-                        IEEE Internet of Things Journal, vol.&nbsp;10(23), pp.&nbsp;20264–20284, 2023.
-                    </li>
-                    <li>
-                        <strong>Bitcoin Under Volatile Block Rewards: How Mempool Statistics Can Influence Bitcoin Mining</strong><br>
-                        ACM&nbsp;CCS&nbsp;2025 Conference on Computer and Communications Security, pp.&nbsp;903–917, 2025.
+                        <strong>Bitcoin under Volatile Block Rewards: How Mempool Statistics Can Influence Bitcoin Mining</strong><br>
+                        ACM Conference on Computer and Communications Security (CCS)&nbsp;2025. <a href="https://arxiv.org/abs/2411.11702" target="_blank">ePrint</a>
                     </li>
                     <li>
                         <strong>Commitment Attacks on Ethereum’s Reward Mechanism</strong><br>
-                        IEEE European Symposium on Security and Privacy (EuroS&amp;P) 2025, pp.&nbsp;504–526, 2025.
+                        IEEE European Symposium on Security and Privacy (EuroS&amp;P)&nbsp;2025. <a href="https://arxiv.org/abs/2407.19479" target="_blank">ePrint</a>
                     </li>
                     <li>
                         <strong>Mining Power Destruction Attacks in the Presence of Petty‑Compliant Mining Pools</strong><br>
-                        Financial Cryptography and Data Security (FC) 2025, pp.&nbsp;208–224, 2025.
+                        Financial Cryptography and Data Security&nbsp;2025. <a href="https://arxiv.org/abs/2502.07410" target="_blank">ePrint</a>
                     </li>
                     <li>
                         <strong>Deep Selfish Proposing in Longest‑Chain Proof‑of‑Stake Protocols</strong><br>
-                        Financial Cryptography and Data Security (FC) 2024, LNCS&nbsp;14744, pp.&nbsp;24–40, 2024.
+                        Financial Cryptography and Data Security&nbsp;2024. <a href="https://eprint.iacr.org/2024/622" target="_blank">ePrint</a>
+                    </li>
+                    <li>
+                        <strong>Time‑Averaged Analysis of Selfish Mining in Bitcoin: Is Orphan Reporting an Effective Countermeasure?</strong><br>
+                        IEEE Transactions on Information Forensics and Security (TIFS)&nbsp;2024. <a href="https://eprint.iacr.org/2024/363" target="_blank">ePrint</a>
                     </li>
                 </ol>
+                <p>For a full publication list, visit my <a href="https://www.esat.kuleuven.be/cosic/static_people/roozbeh-sarenche.html#publications" target="_blank">COSIC profile</a>. My PhD thesis is available at <a href="assets/PhD_thesis_Roozbeh_Sarenche.pdf" target="_blank">this link</a>.</p>
             </div>
         </section>
-
-        <!-- Contact section -->
-        <section id="contact" class="section">
+        <section id="contact" class="section alt-bg">
             <div class="container">
                 <h2>Contact</h2>
-                <p>You can reach me via email or find me on the following platforms:</p>
                 <ul class="contact-list">
                     <li><i class="fa fa-envelope"></i> <a href="mailto:roozbeh.sarenche@esat.kuleuven.be">roozbeh.sarenche@esat.kuleuven.be</a></li>
                     <li><i class="fa fa-map-marker-alt"></i> Leuven, Belgium</li>
@@ -164,7 +100,6 @@
             </div>
         </section>
     </main>
-
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Roozbeh Sarenche. All rights reserved.</p>
