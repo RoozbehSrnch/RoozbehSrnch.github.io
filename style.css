@@ -79,7 +79,7 @@ a:hover {
     height: 240px;
     border-radius: 50%;
     object-fit: cover;
-    transform: scale(0.85);      /* show more of the image */
+    transform: scale(0.65);      /* show more of the image */
     transform-origin: center;   /* keep the image centred */
     margin-right: 1.5rem;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
