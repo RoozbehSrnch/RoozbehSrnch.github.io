@@ -75,12 +75,11 @@ a:hover {
 }
 
 .profile-photo {
+    /* Increase the profile photo size to roughly twice the original */
     width: 240px;
     height: 240px;
     border-radius: 50%;
     object-fit: cover;
-    transform: scale(1);      /* show more of the image */
-    transform-origin: center;   /* keep the image centred */
     margin-right: 1.5rem;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
@@ -131,6 +130,60 @@ a:hover {
 .section p {
     margin-bottom: 1rem;
     color: #444;
+}
+
+/*
+ * Ensure paragraphs in the About section have equal margins on both sides and
+ * aligned text edges. By using text-align: justify, lines will stretch to
+ * fill the available width so both the left and right margins are even.
+ */
+#about p {
+    text-align: justify;
+    /* Keep the last line left‑aligned to avoid excessive spacing */
+    text-align-last: left;
+}
+
+/*
+ * Responsive adjustments
+ * These rules improve the layout on smaller screens (tablets and mobile phones).
+ * The navigation links stack vertically, the profile header becomes a column
+ * layout with centered content, and the profile photo is slightly smaller.
+ */
+@media (max-width: 768px) {
+    /* Stack the nav items below the logo */
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    .nav-links li a {
+        padding: 0.25rem 0;
+    }
+    /* Stack the profile header content */
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .profile-photo {
+        width: 180px;
+        height: 180px;
+        margin: 0 0 1rem 0;
+    }
+    .profile-header h1 {
+        font-size: 1.8rem;
+        margin-top: 0;
+    }
+    /* Provide horizontal padding on small screens */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
 .btn {
